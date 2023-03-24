@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa de un suceso histórico en México</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div id="mapa"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      var mapa = L.map('mapa').setView([19.4326, -99.1332], 10);
+      
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18
+      }).addTo(mapa);
+      
+      var marcador = L.marker([19.4326, -99.1332]).addTo(mapa);
+      marcador.bindPopup("<b>Centro Histórico de la Ciudad de México</b><br>El centro histórico es el corazón de la Ciudad de México y cuenta con muchos edificios históricos y monumentos importantes.").openPopup();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+#boton
+{
+    padding: 0;
+}
+
+
+    #boton li 
+{
+    display: inline;
+}
+#boton li a
+{
+    font-family: arial;
+    font-style:italic;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color:rgb(79, 150, 150)
+    color:   aqua;
+
+}
+
+#boton li a:hover
+{
+    background-color:blueviolet;
+    margin-top: -2;
+    padding-bottom: 12px;
+}
+
+
